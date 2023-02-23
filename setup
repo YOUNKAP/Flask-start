@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Create the project directory and and navigate into it
+mkdir backend
+cd backend
+
+
+# Create flaskr sub folder and create the __init__.py file into it
+mkdir flaskr
+touch __init__.py
+
+
+# For Mac/Linux
+export FLASK_APP=flaskr
+export FLASK_ENV=development
+# Make sure to run this command from the project directory (not from the flaskr)
+flask run
